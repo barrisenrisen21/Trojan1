@@ -32,8 +32,8 @@ dns:
     - 1.1.1.1
     - 112.215.203.254
 proxies:
-  - name: bug.com
-    server: bug.com
+  - name: Dono
+    server: 104.26.7.171
     port: 443
     type: trojan
     password: 09407f20-e2fa-11ef-8107-1239d0255272
@@ -45,7 +45,7 @@ proxies:
       headers:
         Host: sg2.6n6.net
     udp: true
-  - name: 104.26.7.171
+  - name: Baput
     server: 104.26.7.171
     port: 443
     type: trojan
@@ -58,7 +58,7 @@ proxies:
       headers:
         Host: sg3.6n6.net
     udp: true
-  - name: 104.26.7.171 2
+  - name: Baput2
     server: 104.26.7.171
     port: 443
     type: trojan
@@ -71,8 +71,8 @@ proxies:
       headers:
         Host: usa.test3.net
     udp: true
-  - name: 104.22.24.131
-    server: 104.22.24.131
+  - name: Napi
+    server: 104.26.7.171
     port: 443
     type: trojan
     password: 01cd9ae0-e26d-11ef-ac6a-1239d0255272
@@ -84,7 +84,7 @@ proxies:
       headers:
         Host: uk1.test3.net
     udp: true
-  - name: 104.26.7.171 3
+  - name: Baput3
     server: 104.26.7.171
     port: 443
     type: trojan
@@ -97,8 +97,8 @@ proxies:
       headers:
         Host: sg2.6n6.net
     udp: true
-  - name: 104.22.24.131 2
-    server: 104.22.24.131
+  - name: Napi2
+    server: 104.26.7.171
     port: 443
     type: trojan
     password: 011fff70-e268-11ef-9102-1239d0255272
@@ -110,8 +110,8 @@ proxies:
       headers:
         Host: sg1.6n6.net
     udp: true
-  - name: 104.22.24.131 3
-    server: 104.22.24.131
+  - name: Napi3
+    server: 104.26.7.171
     port: 443
     type: trojan
     password: 332a3c90-e260-11ef-ade1-1239d0255272
@@ -123,7 +123,7 @@ proxies:
       headers:
         Host: sg2.6n6.net
     udp: true
-  - name: 104.26.7.171 4
+  - name: Baput4
     server: 104.26.7.171
     port: 443
     type: trojan
@@ -140,14 +140,14 @@ proxy-groups:
   - name: FASTSSH-SSHKIT-HOWDY
     type: select
     proxies:
-      - bug.com
-      - 104.26.7.171
-      - 104.26.7.171 2
-      - 104.22.24.131
-      - 104.26.7.171 3
-      - 104.22.24.131 2
-      - 104.22.24.131 3
-      - 104.26.7.171 4
+      - Dono
+      - Baput
+      - Baput2
+      - Napi
+      - Baput3
+      - Napi2
+      - Napi3
+      - Baput4
       - FALLBACK
       - DIRECT
   - name: FALLBACK
@@ -155,13 +155,13 @@ proxy-groups:
     url: http://hi.bonds.id/ping
     interval: 300
     proxies:
-      - bug.com
-      - 104.26.7.171
-      - 104.26.7.171 2
-      - 104.22.24.131
-      - 104.26.7.171 3
-      - 104.22.24.131 2
-      - 104.22.24.131 3
-      - 104.26.7.171 4
+      - Dono
+      - Baput
+      - Baput2
+      - Napi
+      - Baput3
+      - Napi2
+      - Napi3
+      - Baput4
 rules:
   - MATCH,FASTSSH-SSHKIT-HOWDY
